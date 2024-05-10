@@ -12,6 +12,15 @@
 
 Кроме этого, не меняйте HTML переключателя тем. Его разметка также гарантирует работу своего скрипта.
 */
+@keyframes arrow {
+  from {
+    inset-inline-start: -20px;
+  }
+
+  to {
+    inset-inline-start: -16px;
+  }
+}
 
 .core {
     transition: fill 0.3s linear 0.03s;
@@ -67,17 +76,6 @@
 .like-icon.is-liked .sparks {
   animation: sparks 0.3s ease-in 0.3s 2 alternate;
 }
-
-@keyframes arrow {
-  from {
-    inset-inline-start: -20px;
-  }
-
-  to {
-    inset-inline-start: -16px;
-  }
-}
-
 
 @keyframes sparks {
   from {
