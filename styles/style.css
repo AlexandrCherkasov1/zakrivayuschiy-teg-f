@@ -137,7 +137,7 @@
   padding-inline-end: 24px;
   font-size: 18px;
   line-height: 22px;
-  font-variation-settings: "wght" var(--font_weight_title);  
+  font-variation-settings: "wght" var(--font_weight_title);
   background-color: var(--background-color);
 }
 
@@ -147,7 +147,7 @@
 
 .card__caption {
   position: absolute;
-  z-index: 1;  
+  z-index: 1;
   right: 25px;
   top: 25px;
   font-size: 14px;
@@ -264,7 +264,7 @@
   transition: fill 0.3s linear 0.03s;
 }
 
-.button {  
+.button {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -331,7 +331,7 @@
   background-color: var(--background-color);
   border: 2px solid var(--accent-color);
   padding: 30px;
-  max-width: clamp(21.3125rem, 20.5643rem + 3.1925vw, 23.4375rem);          
+  max-width: clamp(21.3125rem, 20.5643rem + 3.1925vw, 23.4375rem);
 }
 
 .dialog::backdrop {
@@ -339,7 +339,7 @@
 }
 
 .dialog__heading {
-  display: flex;  
+  display: flex;
   margin-bottom: 30px;
   color: var(--accent-color);
   gap: 20px;
