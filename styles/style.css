@@ -163,6 +163,14 @@
     0px -1px var(--background-color);
 }
 
+@supports ((text-stroke: 1px #fff) or (-webkit-text-stroke: 1px #fff)) {
+  .card__caption {
+    text-shadow: none;
+    -webkit-text-stroke: 1px var(--background-color);
+    text-stroke: 1px #fff;
+  }
+}
+
 .card__image {
   color: var(--accent-color);
   background-color: var(--background-color);
