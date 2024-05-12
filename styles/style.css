@@ -44,7 +44,7 @@
 }
 
 .header__logo {
-  margin-block: clamp(7.5rem, 1.502vw + 7.148rem, 8.5rem) 19px;;
+  margin-block: clamp(7.5rem, 1.502vw + 7.148rem, 8.5rem) 19px;
   font-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
   text-decoration: none;
 }
