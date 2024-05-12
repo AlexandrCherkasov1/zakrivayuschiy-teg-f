@@ -86,3 +86,13 @@
     fill: var(--heart-fill, #f00);
   }
 }
+
+@keyframes heartScale {
+  from {
+    scale: 1;
+  }
+
+  to {
+    scale: 1.5;
+  }
+}
