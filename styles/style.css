@@ -88,11 +88,12 @@
   block-size: 2px;
 }
 
-.theme-menu__button:focus-visible {
+.theme-menu__button:focus-within {
+  outline: none;
   opacity: 0.6;
 }
 
-.theme-menu__button:focus-visible::after {
+.theme-menu__button:focus-within::after {
   transform: scaleX(1);
 }
 
@@ -182,50 +183,34 @@
 
 .card__image-filter-1 {
   filter: saturate(200%);
-  -webkit-filter: saturate(200%);
-  -moz-filter: saturate(200%);
 }
 
 .card__image-filter-2 {
   filter: grayscale(15%) brightness(123%) hue-rotate(18deg) saturate(118%) contrast(122%);
-  -webkit-filter: grayscale(15%) brightness(123%) hue-rotate(18deg) saturate(118%) contrast(122%);
-  -moz-filter: grayscale(15%) brightness(123%) hue-rotate(18deg) saturate(118%) contrast(122%);
 }
 
 .card__image-filter-3 {
   filter: brightness(105%) saturate(189%);
-  -webkit-filter: brightness(105%) saturate(189%);
-  -moz-filter: brightness(105%) saturate(189%);
 }
 
 .card__image-filter-4 {
   filter: saturate(170%) contrast(150%);
-  -webkit-filter: saturate(170%) contrast(150%);
-  -moz-filter: saturate(170%) contrast(150%);
 }
 
 .card__image-filter-5 {
   filter: grayscale(100%);
-  -webkit-filter: grayscale(100%);
-  -moz-filter: grayscale(100%);
 }
 
 .card__image-filter-6 {
   filter: brightness(111%) contrast(136%);
-  -webkit-filter: brightness(111%) contrast(136%);
-  -moz-filter: brightness(111%) contrast(136%);
 }
 
 .card__image-filter-7 {
   filter: sepia(50%) saturate(150%);
-  -webkit-filter: sepia(50%) saturate(150%);
-  -moz-filter: sepia(50%) saturate(150%);
 }
 
 .card__image-filter-8 {
   filter: hue-rotate(-70deg) invert(25%);
-  -webkit-filter: hue-rotate(-70deg) invert(25%);
-  -moz-filter: hue-rotate(-70deg) invert(25%);
 }
 
 .card__content {
@@ -327,7 +312,7 @@
 }
 
 .save__button {
-  min-width: 339px;
+  inline-size: clamp(19.375rem, 2.723vw + 18.737rem, 21.188rem);
   gap: 8px;
   margin: 50px auto clamp(6.375rem, 6.309rem + 0.2817vw, 6.5625rem);
   padding: 15px 20px;
@@ -336,7 +321,7 @@
 }
 
 .floppy-icon {
-  max-width: 21px;
+  width: 21px;
   height: auto;
 }
 
@@ -376,12 +361,13 @@
 }
 
 @media (width <= 375px) {
-  .save-button {
-    height: 500px;
+  .save__button {
+    display: flex;
+    flex-direction: column;
+    height: 84px;
   }
 
   .floppy-icon {
     width: 28px;
-    height: 28px;
   }
 }
